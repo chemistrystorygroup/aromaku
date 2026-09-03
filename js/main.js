@@ -171,7 +171,7 @@ function renderProducts() {
         waBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             const msg = `Halo, saya tertarik dengan produk ${p.nama}. Apakah tersedia?`;
-            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
+            window.open(`https://wa.me/628881226472?text=${encodeURIComponent(msg)}`, '_blank');
         });
 
         card.append(badge, name, category, variants, waBtn);
@@ -258,7 +258,7 @@ function openModal(product) {
     // Set WA button
     modalWaBtn.onclick = () => {
         const msg = `Halo, saya tertarik dengan produk ${product.nama} ukuran ${selectedVariant}. Apakah tersedia?`;
-        window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
+        window.open(`https://wa.me/628881226472?text=${encodeURIComponent(msg)}`, '_blank');
     };
 
     modalOverlay.classList.add('open');
