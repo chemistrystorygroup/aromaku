@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Chemistry Story Group | Produk</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/produk.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Chemistry Story Group" class="logo-img" />
+                <span class="logo-text">Chemistry Story Group</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html" class="active">Produk</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kemitraan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <i class="fas fa-search"></i>
+                <a href="#" class="btn-outline">Hubungi Kami</a>
+                <button class="hamburger" id="hamburger" aria-label="menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="produk.html" class="active">Produk</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kemitraan</a>
+            <a href="#">Kontak</a>
+        </div>
+        <div class="mobile-nav-actions">
+            <a href="#" class="btn-outline">Hubungi Kami</a>
+        </div>
+        <div class="mobile-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- ===== HERO PRODUK ===== -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content fade-up">
+                <h1>Koleksi <span class="gold-text">Produk</span> Kami</h1>
+                <p>Temukan berbagai produk pembersih rumah tangga berkualitas untuk kebutuhan bisnis Anda.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Beranda</a>
+                    <span class="separator">/</span>
+                    <span>Produk</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TOOLBAR ===== -->
+    <div class="products-toolbar" id="toolbar">
+        <div class="container">
+            <div class="products-toolbar-left">
+                <span><i class="fas fa-tags"></i> Kategori:</span>
+                <div class="filter-group" id="filterGroup">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="Sabun Cuci Piring">Sabun Cuci Piring</button>
+                    <button class="filter-btn" data-filter="Sabun Laundry">Sabun Laundry</button>
+                    <button class="filter-btn" data-filter="Sampo Mobil">Sampo Mobil</button>
+                    <button class="filter-btn" data-filter="Parfum Laundry">Parfum Laundry</button>
+                    <button class="filter-btn" data-filter="Pembersih Lantai">Pembersih Lantai</button>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari produk..." />
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PRODUCT GRID ===== -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-count" id="productsCount">Menampilkan 0 produk</div>
+            <div class="product-grid" id="productGrid">
+                <!-- Akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Kolom 1: Brand -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Chemistry Story Group" class="footer-logo-img" />
+                        <span class="footer-logo-text">Aromaku by CSG</span>
+                    </div>
+                    <p class="footer-desc">
+                        Produk Pembersih Rumah Tangga Untuk Solusi Kebutuhan Sehari-hari.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Perusahaan -->
+                <div class="footer-col">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Kemitraan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Produk -->
+                <div class="footer-col">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="produk.html">Sabun Cuci Piring</a></li>
+                        <li><a href="produk.html">Sabun Laundry</a></li>
+                        <li><a href="produk.html">Sampo Mobil</a></li>
+                        <li><a href="produk.html">Parfum Laundry</a></li>
+                        <li><a href="produk.html">Pembersih Lantai</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 4: Kontak -->
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Perumnas Bajeng Blok D214, Kel. Bajeng, Kec. Pattallassang, Kab. Takalar, Sulawesi Selatan, Indonesia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+62 888-1226-472</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ptchemistrystorygroup@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>
+                                Senin - Jumat: 08.00 - 16.00<br />
+                                Sabtu: 08.00 - 14.00
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chemistry Story Group.</p>
+                <div class="footer-bottom-links">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-product-image-wrapper" id="modalImageWrapper">
+                <!-- Akan diisi oleh JavaScript -->
+            </div>
+            <div class="modal-title" id="modalTitle">Nama Produk</div>
+            <div class="modal-category" id="modalCategory">Kategori</div>
+            <span class="modal-variant-label">Pilih Ukuran:</span>
+            <div class="variant-options" id="variantOptions"></div>
+            <button class="modal-wa-btn" id="modalWaBtn">
+                <i class="fab fa-whatsapp"></i> Tanya via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/produk.js"></script>
+</body>
+</html>
