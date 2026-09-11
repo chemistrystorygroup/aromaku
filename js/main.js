@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Mohon informasi selanjutnya. Terima kasih.`;
 
-      const nomorTujuan = '6281247837108';
+      const nomorTujuan = '6281247637106';
       const url = `https://wa.me/${nomorTujuan}?text=${encodeURIComponent(pesan)}`;
 
       window.open(url, '_blank');
