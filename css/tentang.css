@@ -1,0 +1,518 @@
+/* ============================================================
+   TENTANG.CSS — Halaman Tentang Kami AROMAKU
+   Styling khusus halaman tentang (self-contained)
+   ============================================================ */
+
+/* ============================================================
+   PAGE HEADER (mengikuti gaya produk.css)
+   ============================================================ */
+.page-header {
+  position: relative;
+  padding: 140px 0 48px;
+  text-align: center;
+}
+
+.page-header .container {
+  max-width: 900px;
+}
+
+.page-header__title {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: var(--navy, #07182D);
+  margin-bottom: 18px;
+}
+
+.page-header__desc {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   PROFIL PERUSAHAAN
+   ============================================================ */
+.about-profile {
+  padding-top: 8px;
+  padding-bottom: 96px;
+}
+
+.about-profile__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-profile__visual {
+  border-radius: var(--radius-xl, 32px);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(7, 24, 45, 0.08));
+}
+
+.about-profile__visual img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-profile__text .section__title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about-profile__desc {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+  margin-bottom: 16px;
+}
+
+.about-profile__desc:last-of-type {
+  margin-bottom: 32px;
+}
+
+/* Stats */
+.about-profile__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border, #E8EBF0);
+}
+
+.stat-item {
+  text-align: left;
+}
+
+.stat-item__number {
+  display: block;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--gold, #D4A72C);
+  margin-bottom: 4px;
+}
+
+.stat-item__label {
+  display: block;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  line-height: 1.4;
+  color: var(--text-muted, #5A6270);
+}
+
+/* ============================================================
+   STRUKTUR ORGANISASI
+   ============================================================ */
+.org-chart {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  background: var(--white, #FFFFFF);
+  border: 1px solid var(--border, #E8EBF0);
+  border-radius: var(--radius-xl, 32px);
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(7, 24, 45, 0.08));
+  overflow: hidden;
+}
+
+/* Placeholder visual saat gambar belum di-upload */
+.org-chart::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(7, 24, 45, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.org-chart__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  object-fit: contain;
+  display: block;
+  border-radius: var(--radius-md, 16px);
+}
+
+/* Placeholder text jika gambar belum ada */
+.org-chart__img[src=""],
+.org-chart__img:not([src]) {
+  background: rgba(212, 167, 44, 0.05);
+}
+
+/* ============================================================
+   VISI & MISI
+   ============================================================ */
+.visi-misi__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.visi-misi__card {
+  background: var(--white, #FFFFFF);
+  border: 1px solid var(--border, #E8EBF0);
+  border-radius: var(--radius-lg, 24px);
+  padding: 40px 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.visi-misi__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gold, #D4A72C);
+}
+
+.visi-misi__card--visi::before {
+  background: var(--gold, #D4A72C);
+}
+
+.visi-misi__card--misi::before {
+  background: var(--navy, #07182D);
+}
+
+.visi-misi__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(7, 24, 45, 0.08));
+  border-color: transparent;
+}
+
+.visi-misi__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 167, 44, 0.1);
+  border-radius: 14px;
+  color: var(--gold, #D4A72C);
+  margin-bottom: 20px;
+}
+
+.visi-misi__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.visi-misi__card--misi .visi-misi__icon {
+  background: rgba(7, 24, 45, 0.06);
+  color: var(--navy, #07182D);
+}
+
+.visi-misi__card h3 {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--navy, #07182D);
+  margin-bottom: 16px;
+}
+
+.visi-misi__card p {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+}
+
+.visi-misi__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visi-misi__list li {
+  position: relative;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+  padding: 8px 0 8px 24px;
+}
+
+.visi-misi__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold, #D4A72C);
+}
+
+/* ============================================================
+   NILAI-NILAI PERUSAHAAN
+   ============================================================ */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.value-item {
+  padding: 32px 24px;
+  background: var(--white, #FFFFFF);
+  border: 1px solid var(--border, #E8EBF0);
+  border-radius: var(--radius-lg, 24px);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(7, 24, 45, 0.08));
+  border-color: transparent;
+}
+
+.value-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 167, 44, 0.1);
+  border-radius: 16px;
+  margin: 0 auto 20px;
+  color: var(--gold, #D4A72C);
+}
+
+.value-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.value-item h3 {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  color: var(--navy, #07182D);
+  margin-bottom: 12px;
+}
+
+.value-item p {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET (<= 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  .page-header {
+    padding: 120px 0 40px;
+  }
+
+  .about-profile__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-profile__visual img {
+    height: 400px;
+  }
+
+  .about-profile__text .section__title {
+    text-align: left;
+  }
+
+  .visi-misi__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (<= 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 100px 0 32px;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    margin-bottom: 14px;
+  }
+
+  .page-header__desc {
+    font-size: 0.9rem;
+  }
+
+  .about-profile {
+    padding-top: 8px;
+    padding-bottom: 64px;
+  }
+
+  .about-profile__visual img {
+    height: 280px;
+  }
+
+  .about-profile__stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .stat-item__number {
+    font-size: 1.35rem;
+  }
+
+  .stat-item__label {
+    font-size: 0.7rem;
+  }
+
+  .org-chart {
+    padding: 16px;
+    border-radius: var(--radius-lg, 24px);
+  }
+
+  .org-chart__img {
+    min-height: 240px;
+  }
+
+  .visi-misi__card {
+    padding: 28px 22px;
+  }
+
+  .visi-misi__card h3 {
+    font-size: 1.2rem;
+  }
+
+  .visi-misi__card p {
+    font-size: 0.9rem;
+  }
+
+  .visi-misi__list li {
+    font-size: 0.85rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .value-item {
+    padding: 24px 20px;
+  }
+
+  .value-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .value-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .value-item h3 {
+    font-size: 1rem;
+  }
+
+  .value-item p {
+    font-size: 0.82rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — SMALL MOBILE (<= 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .page-header {
+    padding: 96px 0 28px;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+  }
+
+  .page-header__desc {
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  .about-profile__visual img {
+    height: 220px;
+  }
+
+  .about-profile__stats {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .stat-item__number {
+    font-size: 1.15rem;
+  }
+
+  .stat-item__label {
+    font-size: 0.65rem;
+  }
+
+  .org-chart {
+    padding: 12px;
+  }
+
+  .org-chart__img {
+    min-height: 200px;
+  }
+
+  .visi-misi__card {
+    padding: 24px 18px;
+  }
+
+  .visi-misi__card h3 {
+    font-size: 1.1rem;
+  }
+
+  .value-item {
+    padding: 20px 16px;
+  }
+}

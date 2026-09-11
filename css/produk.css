@@ -1,0 +1,278 @@
+/* ============================================================
+   PRODUK.CSS — Halaman Produk AROMAKU
+   Styling khusus halaman produk (self-contained)
+   ============================================================ */
+
+/* ============================================================
+   PAGE HEADER
+   ============================================================ */
+.page-header {
+  position: relative;
+  padding: 140px 0 48px;
+  text-align: center;
+}
+
+.page-header .container {
+  max-width: 900px;
+}
+
+.page-header__title {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: var(--navy, #07182D);
+  margin-bottom: 18px;
+}
+
+.page-header__desc {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   PRODUCTS SECTION — Beri jarak dengan header
+   ============================================================ */
+.products-section {
+  padding-top: 8px;
+  padding-bottom: 96px;
+}
+
+/* ============================================================
+   FILTER BAR
+   ============================================================ */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--text-muted, #5A6270);
+  background: var(--white, #FFFFFF);
+  border: 1.5px solid var(--border, #E8EBF0);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  outline: none;
+}
+
+.filter-btn:hover {
+  border-color: var(--navy, #07182D);
+  color: var(--navy, #07182D);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 24, 45, 0.06);
+}
+
+.filter-btn:focus-visible {
+  outline: 2px solid var(--gold, #D4A72C);
+  outline-offset: 3px;
+}
+
+.filter-btn.active {
+  background: var(--navy, #07182D);
+  border-color: var(--navy, #07182D);
+  color: var(--white, #FFFFFF);
+  box-shadow: 0 8px 20px rgba(7, 24, 45, 0.18);
+}
+
+/* ============================================================
+   PRODUCTS GRID — FULL VERSION
+   4 kolom di desktop, 3 di tablet, 2 di mobile, 1 di small
+   ============================================================ */
+.products-grid--full {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Animasi masuk untuk kartu produk */
+.products-grid--full .product-card {
+  animation: productFadeIn 0.5s ease backwards;
+}
+
+.products-grid--full .product-card:nth-child(1)  { animation-delay: 0.03s; }
+.products-grid--full .product-card:nth-child(2)  { animation-delay: 0.06s; }
+.products-grid--full .product-card:nth-child(3)  { animation-delay: 0.09s; }
+.products-grid--full .product-card:nth-child(4)  { animation-delay: 0.12s; }
+.products-grid--full .product-card:nth-child(5)  { animation-delay: 0.15s; }
+.products-grid--full .product-card:nth-child(6)  { animation-delay: 0.18s; }
+.products-grid--full .product-card:nth-child(7)  { animation-delay: 0.21s; }
+.products-grid--full .product-card:nth-child(8)  { animation-delay: 0.24s; }
+.products-grid--full .product-card:nth-child(9)  { animation-delay: 0.27s; }
+.products-grid--full .product-card:nth-child(10) { animation-delay: 0.30s; }
+.products-grid--full .product-card:nth-child(11) { animation-delay: 0.33s; }
+.products-grid--full .product-card:nth-child(12) { animation-delay: 0.36s; }
+.products-grid--full .product-card:nth-child(13) { animation-delay: 0.39s; }
+.products-grid--full .product-card:nth-child(14) { animation-delay: 0.42s; }
+
+@keyframes productFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+.products-empty {
+  text-align: center;
+  padding: 72px 24px;
+  background: var(--white, #FFFFFF);
+  border: 1px dashed var(--border, #E8EBF0);
+  border-radius: 24px;
+  margin-top: 16px;
+}
+
+.products-empty p {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-muted, #5A6270);
+  line-height: 1.65;
+}
+
+.products-empty::before {
+  content: '🔍';
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET (<= 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  .page-header {
+    padding: 120px 0 40px;
+  }
+
+  .products-grid--full {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .filter-bar {
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (<= 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 100px 0 32px;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    margin-bottom: 14px;
+  }
+
+  .page-header__desc {
+    font-size: 0.9rem;
+  }
+
+  /* Filter — scroll horizontal di mobile */
+  .filter-bar {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    margin-bottom: 32px;
+    padding: 4px 4px 12px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 9px 18px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .products-grid--full {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .products-empty {
+    padding: 48px 16px;
+  }
+
+  .products-section {
+    padding-top: 8px;
+    padding-bottom: 64px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — SMALL MOBILE (<= 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .page-header {
+    padding: 96px 0 28px;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+  }
+
+  .page-header__desc {
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  .products-grid--full {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.72rem;
+  }
+}
+
+/* ============================================================
+   AKSESIBILITAS — REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .products-grid--full .product-card {
+    animation: none;
+  }
+
+  .filter-btn {
+    transition: none;
+  }
+}

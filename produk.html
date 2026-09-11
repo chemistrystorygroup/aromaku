@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk — AROMAKU | PT Chemistry Story Group</title>
+  <meta name="description" content="Jelajahi koleksi produk pembersih Aromaku: sabun cuci piring, laundry, pembersih lantai, sampo mobil, dan lainnya. Tersedia dalam berbagai kemasan.">
+  
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/produk.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/logo.png" alt="Logo CSG" class="navbar__logo-img" style="height: 40px; width: auto;">
+        <span class="navbar__name">AROMAKU</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Beranda</a>
+        <a href="produk.html" class="navbar__link active">Produk</a>
+        <a href="tentang.html" class="navbar__link">Tentang Kami</a>
+        <a href="kemitraan.html" class="navbar__link">Kemitraan</a>
+        <a href="kontak.html" class="navbar__link">Kontak</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="kontak.html" class="btn btn--gold btn--sm">Hubungi Kami</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">KOLEKSI PRODUK</p>
+      <h1 class="page-header__title">Produk Aromaku</h1>
+      <p class="page-header__desc">
+        Pilihan produk pembersih berkualitas untuk rumah tangga, usaha, dan industri. 
+        Tersedia dalam 3 tingkatan kualitas: Ekonomi, Standar, dan Premium.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+
+      <!-- Filter Kategori -->
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">Semua Produk</button>
+        <button type="button" class="filter-btn" data-filter="Pembersih Dapur">Pembersih Dapur</button>
+        <button type="button" class="filter-btn" data-filter="Perawatan Pakaian">Perawatan Pakaian</button>
+        <button type="button" class="filter-btn" data-filter="Pembersih Rumah">Pembersih Rumah</button>
+        <button type="button" class="filter-btn" data-filter="Perawatan Kendaraan">Perawatan Kendaraan</button>
+        <button type="button" class="filter-btn" data-filter="Perawatan Ruangan">Perawatan Ruangan</button>
+        <button type="button" class="filter-btn" data-filter="Perawatan Tubuh">Perawatan Tubuh</button>
+        <button type="button" class="filter-btn" data-filter="Perawatan Bayi">Perawatan Bayi</button>
+        <button type="button" class="filter-btn" data-filter="Pembersih Kamar Mandi">Pembersih Kamar Mandi</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid products-grid--full" id="productsGrid">
+
+        <!-- Produk 1 -->
+        <button type="button" class="product-card" data-product="sabun-cuci-piring" data-category="Pembersih Dapur">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-cuci-piring.jpg" alt="Sabun Cuci Piring" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Dapur</p>
+            <h3 class="product-card__title">Sabun Cuci Piring</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 2 -->
+        <button type="button" class="product-card" data-product="sabun-laundry" data-category="Perawatan Pakaian">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-laundry.jpg" alt="Sabun Laundry" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Pakaian</p>
+            <h3 class="product-card__title">Sabun Laundry</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 3 -->
+        <button type="button" class="product-card" data-product="sampo-mobil" data-category="Perawatan Kendaraan">
+          <div class="product-card__img">
+            <img src="assets/produk/sampo-mobil.jpg" alt="Sampo Mobil" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Kendaraan</p>
+            <h3 class="product-card__title">Sampo Mobil</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 4 -->
+        <button type="button" class="product-card" data-product="parfum-laundry" data-category="Perawatan Pakaian">
+          <div class="product-card__img">
+            <img src="assets/produk/parfum-laundry.jpg" alt="Parfum Laundry" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Pakaian</p>
+            <h3 class="product-card__title">Parfum Laundry</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 5 -->
+        <button type="button" class="product-card" data-product="sabun-cuci-galon" data-category="Pembersih Dapur">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-cuci-galon.jpg" alt="Sabun Cuci Galon" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Dapur</p>
+            <h3 class="product-card__title">Sabun Cuci Galon</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 6 -->
+        <button type="button" class="product-card" data-product="pembersih-lantai" data-category="Pembersih Rumah">
+          <div class="product-card__img">
+            <img src="assets/produk/pembersih-lantai.jpg" alt="Pembersih Lantai" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Rumah</p>
+            <h3 class="product-card__title">Pembersih Lantai</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 7 -->
+        <button type="button" class="product-card" data-product="shampoo-motor" data-category="Perawatan Kendaraan">
+          <div class="product-card__img">
+            <img src="assets/produk/shampoo-motor.jpg" alt="Shampoo Motor" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Kendaraan</p>
+            <h3 class="product-card__title">Shampoo Motor</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 8 -->
+        <button type="button" class="product-card" data-product="deodoran-spray" data-category="Perawatan Ruangan">
+          <div class="product-card__img">
+            <img src="assets/produk/deodoran-spray.jpg" alt="Deodoran Spray" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Ruangan</p>
+            <h3 class="product-card__title">Deodoran Spray</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 9 -->
+        <button type="button" class="product-card" data-product="pembersih-toilet" data-category="Pembersih Kamar Mandi">
+          <div class="product-card__img">
+            <img src="assets/produk/pembersih-toilet.jpg" alt="Pembersih Toilet" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Kamar Mandi</p>
+            <h3 class="product-card__title">Pembersih Toilet</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 10 -->
+        <button type="button" class="product-card" data-product="sabun-perlengkapan-bayi" data-category="Perawatan Bayi">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-bayi.jpg" alt="Sabun Perlengkapan Bayi" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Bayi</p>
+            <h3 class="product-card__title">Sabun Perlengkapan Bayi</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 11 -->
+        <button type="button" class="product-card" data-product="pembersih-kaca" data-category="Pembersih Rumah">
+          <div class="product-card__img">
+            <img src="assets/produk/pembersih-kaca.jpg" alt="Pembersih Kaca" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Rumah</p>
+            <h3 class="product-card__title">Pembersih Kaca</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 12 -->
+        <button type="button" class="product-card" data-product="pembersih-serbaguna" data-category="Pembersih Rumah">
+          <div class="product-card__img">
+            <img src="assets/produk/pembersih-serbaguna.jpg" alt="Pembersih Serbaguna" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Rumah</p>
+            <h3 class="product-card__title">Pembersih Serbaguna</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 13 -->
+        <button type="button" class="product-card" data-product="handsoap" data-category="Perawatan Tubuh">
+          <div class="product-card__img">
+            <img src="assets/produk/Handsoap.jpg" alt="Handsoap" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Tubuh</p>
+            <h3 class="product-card__title">Handsoap</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 14 -->
+        <button type="button" class="product-card" data-product="softener" data-category="Perawatan Pakaian">
+          <div class="product-card__img">
+            <img src="assets/produk/Softener.png" alt="Softener" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Pakaian</p>
+            <h3 class="product-card__title">Softener</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- Empty State -->
+      <div class="products-empty" id="productsEmpty" style="display: none;">
+        <p>Tidak ada produk dalam kategori ini.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="Logo CSG" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <span class="footer__name">AROMAKU</span>
+        <p>Jaringan depot sabun isi ulang modern bersama Chemistry Story Group.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="index.html#why">Keunggulan Bisnis</a></li>
+          <li><a href="kemitraan.html">Kemitraan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="produk.html">Sabun Cuci Piring</a></li>
+          <li><a href="produk.html">Sabun Laundry</a></li>
+          <li><a href="produk.html">Pembersih Lantai</a></li>
+          <li><a href="produk.html">Parfum Laundry</a></li>
+          <li><a href="produk.html">Sampo Mobil</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li>Perumahan Biring Blok D214, Takalar, Sulawesi Selatan</li>
+          <li><a href="https://wa.me/6281247837108" target="_blank" rel="noopener">+62 812-4783-7108</a></li>
+          <li><a href="mailto:ptchemistrystorygroup@gmail.com">ptchemistrystorygroup@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 PT Chemistry Story Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL DETAIL PRODUK ===== -->
+  <div class="modal modal--product" id="modalProduct" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+      <button type="button" class="modal__close" data-close-modal aria-label="Tutup">&times;</button>
+
+      <div class="product-modal__grid">
+        <div class="product-modal__visual">
+          <img id="modalProductImg" src="" alt="" loading="lazy">
+        </div>
+
+        <div class="product-modal__info">
+          <p class="product-modal__cat" id="modalProductCat">—</p>
+          <h3 class="modal__title modal__title--plain" id="modalProductTitle">—</h3>
+          <p class="product-modal__desc" id="modalProductDesc">—</p>
+
+          <ul class="product-modal__highlights" id="modalProductHighlights"></ul>
+
+          <div class="product-modal__packs">
+            <span class="product-modal__meta-label">Kemasan Tersedia</span>
+            <div class="product-modal__packs-list" id="modalProductPack">—</div>
+          </div>
+
+          <a href="#" id="modalProductWa" class="btn btn--gold btn--full" target="_blank" rel="noopener">Tanya via WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <!-- ===== WHATSAPP PRODUK — KHUSUS HALAMAN PRODUK ===== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const WA_NUMBER = '6281247837108';
+      const waBtn = document.getElementById('modalProductWa');
+      const modalTitle = document.getElementById('modalProductTitle');
+
+      if (waBtn && modalTitle) {
+        waBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const productName = modalTitle.textContent.trim();
+          if (!productName || productName === '—') return;
+
+          const pesan = `Halo AROMAKU, saya ingin bertanya tentang produk *${productName}*.
+
+Mohon informasi mengenai:
+- Harga
+- Kemasan yang tersedia
+- Cara pemesana
+
+Terima kasih.`;
+
+          const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`;
+          window.open(url, '_blank');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AROMAKU — PT Chemistry Story Group | Solusi Kebersihan & Peluang Usaha</title>
+  <meta name="description" content="Aromaku by PT Chemistry Story Group: produk pembersih rumah tangga premium, sistem depot sabun isi ulang modern, dan peluang kemitraan usaha.">
+  
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/images/logo.png" alt="Logo CSG" class="navbar__logo-img" style="height: 40px; width: auto;">
+        <span class="navbar__name">AROMAKU</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link active">Beranda</a>
+        <a href="produk.html" class="navbar__link">Produk</a>
+        <a href="tentang.html" class="navbar__link">Tentang Kami</a>
+        <a href="kemitraan.html" class="navbar__link">Kemitraan</a>
+        <a href="kontak.html" class="navbar__link">Kontak</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="kontak.html" class="btn btn--gold btn--sm">Hubungi Kami</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-decor">
+      <svg viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 300 C300 100, 600 500, 900 250 S1200 450, 1440 200" stroke="#D4A72C" stroke-width="0.8" opacity="0.15"/>
+        <path d="M0 350 C350 150, 700 550, 1000 300 S1300 500, 1440 250" stroke="#07182D" stroke-width="0.5" opacity="0.08"/>
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">PRODUK KEBERSIHAN &amp; PELUANG USAHA</p>
+        <h1 class="hero__title">
+          Solusi Kebersihan<br>
+          Untuk Kebutuhan<br>
+          <span class="text-gold">Sehari-hari.</span>
+        </h1>
+        <p class="hero__desc">
+          Aromaku hadir sebagai partner bisnis bagi depot sabun isi ulang, reseller, toko, dan pelaku usaha dengan pilihan produk pembersih rumah tangga yang berkualitas, praktis, dan siap mendukung pertumbuhan bisnis Anda.
+        </p>
+        <div class="hero__cta">
+          <a href="produk.html" class="btn btn--gold">Lihat Produk →</a>
+          <a href="kemitraan.html" class="btn btn--outline">Jadi Mitra</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__product-glow"></div>
+        <div class="hero__product-img">
+          <div class="hero__slideshow" id="heroSlideshow">
+            <img src="assets/hero-image/hero-image1.jpg" alt="Produk Aromaku 1" class="hero__slide active" loading="eager">
+            <img src="assets/hero-image/hero-image2.jpg" alt="Produk Aromaku 2" class="hero__slide" loading="lazy">
+            <img src="assets/hero-image/hero-image3.jpg" alt="Produk Aromaku 3" class="hero__slide" loading="lazy">
+            <img src="assets/hero-image/hero-image4.jpg" alt="Produk Aromaku 4" class="hero__slide" loading="lazy">
+            <img src="assets/hero-image/hero-image5.jpg" alt="Produk Aromaku 5" class="hero__slide" loading="lazy">
+          </div>
+          <div class="hero__dots" id="heroDots">
+            <button class="hero__dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero__dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero__dot" data-index="2" aria-label="Slide 3"></button>
+            <button class="hero__dot" data-index="3" aria-label="Slide 4"></button>
+            <button class="hero__dot" data-index="4" aria-label="Slide 5"></button>
+          </div>
+        </div>
+        <div class="hero__float-decor">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="80" stroke="#D4A72C" stroke-width="0.5" opacity="0.3"/>
+            <circle cx="100" cy="100" r="60" stroke="#07182D" stroke-width="0.3" opacity="0.15"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  <!-- ===== WHY AROMAKU ===== -->
+  <section class="section section--light bg-pattern" id="why">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">KENAPA AROMAKU?</p>
+        <h2 class="section__title">Lebih dari sekadar<br>produk kebersihan.</h2>
+        <p class="section__subtitle">
+          Model bisnis yang dirancang untuk memenuhi kebutuhan pasar sekaligus membuka peluang usaha.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Belum Ada Kompetitor Nasional</h3>
+          <p>Memiliki peluang pengembangan jaringan usaha yang luas.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 6-6"/></svg>
+          </div>
+          <h3>Kebutuhan Pasar Besar</h3>
+          <p>Produk kebersihan merupakan kebutuhan rutin rumah tangga dan usaha.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3>Sistem Refill Hemat</h3>
+          <p>Konsep isi ulang membantu memberikan pilihan pembelian yang lebih ekonomis.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Target Pasar Sangat Luas</h3>
+          <p>Dapat menjangkau rumah tangga, toko, usaha, hingga kebutuhan industri.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          </div>
+          <h3>Repeat Order Tinggi</h3>
+          <p>Produk kebutuhan sehari-hari memiliki potensi pembelian berulang.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Mudah Direplikasi</h3>
+          <p>Model depot dapat dikembangkan dan diperluas ke berbagai daerah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT SHOWCASE ===== -->
+  <section class="section bg-dots" id="products">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">KOLEKSI PRODUK</p>
+        <h2 class="section__title">Produk kebersihan untuk<br>berbagai kebutuhan.</h2>
+        <p class="section__subtitle">
+          Temukan pilihan produk dari Chemistry Story Group untuk rumah tangga, usaha, dan kebutuhan lainnya. Klik produk untuk melihat detail &amp; kemasan.
+        </p>
+      </div>
+
+            <div class="products-grid">
+        <!-- Produk 1 -->
+        <button type="button" class="product-card" data-product="sabun-cuci-piring">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-cuci-piring.jpg" alt="Sabun Cuci Piring" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Dapur</p>
+            <h3 class="product-card__title">Sabun Cuci Piring</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 2 -->
+        <button type="button" class="product-card" data-product="sabun-laundry">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-laundry.jpg" alt="Sabun Laundry" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Pakaian</p>
+            <h3 class="product-card__title">Sabun Laundry</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 3 -->
+        <button type="button" class="product-card" data-product="sampo-mobil">
+          <div class="product-card__img">
+            <img src="assets/produk/sampo-mobil.jpg" alt="Sampo Mobil" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Kendaraan</p>
+            <h3 class="product-card__title">Sampo Mobil</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 4 -->
+        <button type="button" class="product-card" data-product="parfum-laundry">
+          <div class="product-card__img">
+            <img src="assets/produk/parfum-laundry.jpg" alt="Parfum Laundry" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Pakaian</p>
+            <h3 class="product-card__title">Parfum Laundry</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 5 -->
+        <button type="button" class="product-card" data-product="sabun-cuci-galon">
+          <div class="product-card__img">
+            <img src="assets/produk/sabun-cuci-galon.jpg" alt="Sabun Cuci Galon" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Dapur</p>
+            <h3 class="product-card__title">Sabun Cuci Galon</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 6 -->
+        <button type="button" class="product-card" data-product="pembersih-lantai">
+          <div class="product-card__img">
+            <img src="assets/produk/pembersih-lantai.jpg" alt="Pembersih Lantai" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Pembersih Rumah</p>
+            <h3 class="product-card__title">Pembersih Lantai</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 7 -->
+        <button type="button" class="product-card" data-product="shampoo-motor">
+          <div class="product-card__img">
+            <img src="assets/produk/shampoo-motor.jpg" alt="Shampoo Motor" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Kendaraan</p>
+            <h3 class="product-card__title">Shampoo Motor</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+
+        <!-- Produk 8 -->
+        <button type="button" class="product-card" data-product="deodoran-spray">
+          <div class="product-card__img">
+            <img src="assets/produk/deodoran-spray.jpg" alt="Deodoran Spray" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__cat">Perawatan Ruangan</p>
+            <h3 class="product-card__title">Deodoran Spray</h3>
+            <span class="product-card__link">Lihat Detail →</span>
+          </div>
+        </button>
+      </div>
+      
+      <div class="section__cta">
+        <a href="produk.html" class="btn btn--outline-dark">Lihat Semua Produk →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCT ===== -->
+  <section class="featured" id="featured">
+    <div class="container">
+     <div class="featured__inner" style="background-image: linear-gradient(rgba(7, 24, 45, 0.85), rgba(7, 24, 45, 0.85)), url('assets/images/featured-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="featured__visual">
+          <img src="assets/images/produk-unggulan.jpg" alt="Super Pel Aromaku" loading="lazy">
+        </div>
+        <div class="featured__text">
+          <p class="eyebrow eyebrow--gold">PRODUK UNGGULAN</p>
+          <h2 class="featured__title">Super Pel<br>Aromaku</h2>
+          <p class="featured__desc">
+            Produk pembersih lantai dengan pilihan aroma yang menyegarkan untuk membantu menjaga kebersihan dan kenyamanan ruangan.
+          </p>
+          <ul class="featured__highlights">
+            <li>Bersih maksimal</li>
+            <li>Wangi tahan lama</li>
+            <li>Aman &amp; lembut</li>
+            <li>Ekonomis &amp; hemat</li>
+          </ul>
+          <a href="produk.html" class="btn btn--gold">Lihat Produk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG PT CSG ===== -->
+  <section class="section section--light bg-pattern" id="about">
+    <div class="container about__grid">
+      <div class="about__visual">
+        <img src="assets/images/about-csg.jpg" alt="Aktivitas Produksi CSG" loading="lazy">
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">TENTANG KAMI</p>
+        <h2 class="section__title">Tentang PT Chemistry<br>Story Group</h2>
+        <p class="about__desc">
+          PT. Chemistry Story Group adalah perusahaan yang bergerak di bidang produksi sabun cair premium, sistem depot sabun isi ulang modern, distribusi produk kebersihan rumah tangga &amp; industri, serta pengembangan kemitraan usaha daerah.
+        </p>
+        
+        <div class="about__cards">
+          <div class="about__card">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>Produksi sabun cair premium</span>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>Sistem depot sabun isi ulang modern</span>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>Distribusi produk kebersihan rumah tangga &amp; industri</span>
+          </div>
+          <div class="about__card">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>Pengembangan kemitraan usaha daerah</span>
+          </div>
+        </div>
+
+        <div class="about__focus">
+          <strong>Fokus Utama:</strong>
+          <p>Membangun jaringan Depot Sabun Isi Ulang modern di setiap kabupaten/kota Indonesia.</p>
+        </div>
+        <div class="about__cta">
+          <button type="button" class="btn btn--outline-dark btn--sm" data-modal="visi">Lihat Visi</button>
+          <button type="button" class="btn btn--outline-dark btn--sm" data-modal="misi">Lihat Misi</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEMITRAAN ===== -->
+  <section class="partnership" id="partnership">
+    <div class="container">
+      <div class="partnership__inner">
+        <div class="partnership__overlay"></div>
+        
+        <div class="partnership__content">
+          <div class="partnership__header">
+            <h2 class="partnership__title">Bangun Peluang Usahamu<br>Bersama Aromaku.</h2>
+            <p class="partnership__desc">
+              Bergabung menjadi mitra kami dan kembangkan bisnis produk kebersihan dengan sistem yang siap mendukung kebutuhan usaha Anda.
+            </p>
+          </div>
+
+          <div class="partnership__cards">
+            <div class="partner-card">
+              <h3>RESELLER</h3>
+              <p>Untuk Anda yang ingin menjual kembali produk Aromaku.</p>
+            </div>
+            <div class="partner-card">
+              <h3>DEPOT ISI ULANG</h3>
+              <p>Bangun bisnis depot sabun isi ulang dengan produk berkualitas.</p>
+            </div>
+            <div class="partner-card">
+              <h3>DISTRIBUTOR</h3>
+              <p>Perluas jaringan distribusi produk Aromaku di wilayah Anda.</p>
+            </div>
+          </div>
+
+          <div class="partnership__cta">
+            <a href="kemitraan.html" class="btn btn--gold">Daftar Jadi Mitra →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST ===== -->
+  <section class="section section--light bg-lines" id="trust">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">BERSAMA MEMBANGUN JARINGAN</p>
+        <h2 class="section__title">Tumbuh bersama<br>jaringan Aromaku.</h2>
+        <p class="section__subtitle">
+          Kami membangun ekosistem bisnis yang saling mendukung antara perusahaan, mitra, dan pelanggan.
+        </p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Kemitraan Terbuka</h3>
+          <p>Peluang menjadi reseller, depot isi ulang, atau distributor di wilayah Anda.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Produk Berkualitas</h3>
+          <p>Diproduksi dengan standar kebersihan dan kualitas yang terjaga.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3>Sistem Refill Modern</h3>
+          <p>Model depot isi ulang yang praktis dan ramah lingkungan.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Jangkauan Luas</h3>
+          <p>Target pasar rumah tangga, toko, usaha, hingga industri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Siap menjadi bagian dari<br>jaringan Aromaku?</h2>
+        <p>Hubungi kami untuk mendapatkan informasi produk dan peluang kemitraan.</p>
+        <div class="cta-box__actions">
+          <a href="kontak.html" class="btn btn--gold">Hubungi Kami →</a>
+          <a href="kemitraan.html" class="btn btn--outline-light">Daftar Jadi Mitra</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section class="section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow">KONTAK</p>
+        <h2 class="section__title">Hubungi Kami</h2>
+        <ul class="contact__list">
+          <li>
+            <strong>Alamat:</strong>
+            <span>Perumahan Biring Blok D214, Kel. Biring, Kec. Pattallassang, Kab. Takalar, Sulawesi Selatan</span>
+          </li>
+          <li>
+            <strong>Telepon:</strong>
+            <span>+62 812-4783-7108<br>+62 888-1226-472</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <span>ptchemistrystorygroup@gmail.com</span>
+          </li>
+          <li>
+            <strong>Jam Operasional:</strong>
+            <span>Senin–Jumat: 08.00–16.00<br>Sabtu: 08.00–14.00</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact__form">
+        <h3>Form Pendaftaran Mitra</h3>
+        <form id="partnerForm">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required placeholder="Nama lengkap Anda">
+          </div>
+          <div class="form-group">
+            <label for="alamat">Alamat Domisili</label>
+            <input type="text" id="alamat" name="alamat" required placeholder="Alamat domisili">
+          </div>
+          <div class="form-group">
+            <label for="wa">Nomor WhatsApp</label>
+            <input type="tel" id="wa" name="wa" required placeholder="08xxxxxxxxxx">
+          </div>
+          <div class="form-group">
+            <label for="kemitraan">Pilihan Kemitraan</label>
+            <select id="kemitraan" name="kemitraan" required>
+              <option value="">Pilih kemitraan</option>
+              <option value="Reseller">Reseller</option>
+              <option value="Depot Isi Ulang">Depot Isi Ulang</option>
+              <option value="Distributor">Distributor</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Daftar via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="Logo CSG" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <span class="footer__name">AROMAKU</span>
+        <p>Jaringan depot sabun isi ulang modern bersama Chemistry Story Group.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="index.html#why">Keunggulan Bisnis</a></li>
+          <li><a href="kemitraan.html">Kemitraan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="produk.html">Sabun Cuci Piring</a></li>
+          <li><a href="produk.html">Sabun Laundry</a></li>
+          <li><a href="produk.html">Pembersih Lantai</a></li>
+          <li><a href="produk.html">Parfum Laundry</a></li>
+          <li><a href="produk.html">Sampo Mobil</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li>Perumahan Biring Blok D214, Takalar, Sulawesi Selatan</li>
+          <li><a href="https://wa.me/6281247837108" target="_blank" rel="noopener">+62 812-4783-7108</a></li>
+          <li><a href="mailto:ptchemistrystorygroup@gmail.com">ptchemistrystorygroup@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 PT Chemistry Story Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL VISI ===== -->
+  <div class="modal" id="modalVisi" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalVisiTitle">
+      <button type="button" class="modal__close" data-close-modal aria-label="Tutup">&times;</button>
+      <h3 class="modal__title" id="modalVisiTitle">Visi</h3>
+      <div class="modal__body">
+        <p class="modal__lead">
+          Menjadi jaringan depot sabun isi ulang modern terbesar dan terpercaya di Indonesia.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL MISI ===== -->
+  <div class="modal" id="modalMisi" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalMisiTitle">
+      <button type="button" class="modal__close" data-close-modal aria-label="Tutup">&times;</button>
+      <h3 class="modal__title" id="modalMisiTitle">Misi</h3>
+      <div class="modal__body">
+        <ul class="modal__list">
+          <li>Menyediakan produk sabun cair dengan 3 kualitas produk</li>
+          <li>Membantu masyarakat mendapatkan produk lebih hemat</li>
+          <li>Membangun sistem usaha modern berbasis kemitraan daerah</li>
+          <li>Mengurangi limbah plastik melalui sistem refill</li>
+          <li>Membuka peluang usaha dan lapangan kerja di seluruh Indonesia</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DETAIL PRODUK ===== -->
+  <div class="modal modal--product" id="modalProduct" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+      <button type="button" class="modal__close" data-close-modal aria-label="Tutup">&times;</button>
+
+      <div class="product-modal__grid">
+        <div class="product-modal__visual">
+          <img id="modalProductImg" src="" alt="" loading="lazy">
+        </div>
+
+        <div class="product-modal__info">
+          <p class="product-modal__cat" id="modalProductCat">—</p>
+          <h3 class="modal__title modal__title--plain" id="modalProductTitle">—</h3>
+          <p class="product-modal__desc" id="modalProductDesc">—</p>
+
+          <ul class="product-modal__highlights" id="modalProductHighlights"></ul>
+
+          <div class="product-modal__packs">
+            <span class="product-modal__meta-label">Kemasan Tersedia</span>
+            <div class="product-modal__packs-list" id="modalProductPack">—</div>
+          </div>
+
+          <a href="kontak.html" class="btn btn--gold btn--full">Tanya via WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
