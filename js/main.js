@@ -501,6 +501,7 @@ Mohon informasi selanjutnya. Terima kasih.`;
     const modalDesc = document.getElementById('modalProductDesc');
     const modalHighlights = document.getElementById('modalProductHighlights');
     const modalPack = document.getElementById('modalProductPack');
+    const modalWa = document.getElementById('modalProductWa');
 
     const tierColors = {
       'Ekonomi': '#5A6270',
@@ -554,6 +555,13 @@ Mohon informasi selanjutnya. Terima kasih.`;
         });
       } else {
         modalPack.textContent = '—';
+      }
+
+      // WhatsApp link dinamis per produk
+      if (modalWa) {
+        const nomorTujuan = '6281247637106';
+        const pesan = `Halo AROMAKU, saya ingin bertanya tentang produk *${data.title}* (${data.category}). Mohon informasi harga dan ketersediaan kemasan. Terima kasih.`;
+        modalWa.href = `https://wa.me/${nomorTujuan}?text=${encodeURIComponent(pesan)}`;
       }
     };
 
